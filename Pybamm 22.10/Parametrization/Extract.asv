@@ -26,7 +26,7 @@ R = 5.22e-6;             % Particle Radius [m]
 R_p=linspace(0,R,length(c_p_DFN(:,1)));
 
 subplot(1,2,1);
-surf(t_SPM(1:k_end),R_p,c_p_SPM(:,1:k_end),'facecolor','b','facealpha',0.3,'edgecolor',[1 0 1])
+surf(t_SPM(1:k_end),R_p,c_p_SPM,'facecolor','b','facealpha',0.3,'edgecolor',[1 0 1])
     grid('on');
     xlabel('Distance [m]','interpreter','latex'); ylabel('Time [h]','interpreter','latex'); zlabel('Concentration [mol/m3]','interpreter','latex');
     title('Time vs R Positive particle Concentration [mol/m3]','interpreter','latex');
